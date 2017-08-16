@@ -1,0 +1,85 @@
+.image { 
+   position: relative; 
+   
+}
+
+h1 { 
+   position: absolute; 
+   filter: alpha(opacity=60);
+   opacity:  0.6;
+   bottom:10px; 
+   right:10px; 
+   width: 70%; 
+
+}
+h1 span {
+	color:white;
+	font:oblique 45px times, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); 
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+  filter: alpha(opacity=100);
+  opacity: 1;
+
+}
+h2{
+	color: purple;
+	font:times;
+	font-size: 45px
+}
+#background {
+	background-size: 200px
+}
+body
+{
+	background-color:lightgrey;
+}
+h3 {
+	position: relative;
+	left:40px;
+	font-size:30px;
+
+}
+#coloumn-1 {
+	position:relative;
+	left:75px;
+	font-size:25px;
+	margin-top:20px;
+}
+#coloumn-2{
+	position:relative;
+	left:850px;
+	font-size:25px;
+	top:0px;
+
+}
+#homeInput
+{
+	margin-left: 77px;
+}
+#majorInput{
+	margin-left:16px;
+}
+#row-1 {
+	position:relative;
+	left:75px;
+	font-size:25px;
+	margin-top: 30px;
+}
+#row-2{
+	position:relative;
+	left:850px;
+	font-size:25px;
+    margin-top:30px;
+}
+.btn-success{
+	height:45px;
+	width:100px;
+}
+
+
+
+
+
+
