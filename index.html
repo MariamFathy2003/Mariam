@@ -5,6 +5,15 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="CSS/style.css">
 <script type="text/javascript" src=js/jquery-3.2.1.js></script>
+<script type="text/javascript">
+  function redirect() {
+    var value =$('#countries').val();
+    if (value == "us") {
+      window.location.href ="./page1.html";
+    }
+  }
+</script>
+<link rel="stylesheet" type="text/html" href="Page 1.html">
 </head>
       <div class="image">
       <img src="img/college-students.jpg" alt="college students" style="width:1355px;height:440px;">
@@ -19,9 +28,8 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
     </ul>
   </div>
 </nav>
@@ -30,21 +38,31 @@
 
 <h3>Our website will help you find the college where you belong!
  </h3>
- <form action="/action_page.php">
+ <div>
  <div id= 'coloumn-1'>
-  Destination of scholarship: <input type="text" name="fname"><br>
+  Destination of scholarship: <select id="countries">
+  <option value="us">USA</option>
+  <option value="uk">UK</option>
+  <option value="de">Germany</option>
+  <option value="ua">Dubai</option>
+   <option value="tr">Turkey</option>
+    <option value="eg">Egypt</option>
+</select>
  </div>
  <div id= "row-1" >
   Your home country: <input  id = "homeInput" type="text" name="lname"><br>
  </div>
 <div id="coloumn-2">
-  Aimed degree: <input type="text" name="fname"><br>
+  Aimed degree: <select name="cars">
+  <option value="volvo">undergraduate</option>
+  <option value="saab">graduate</option>
+</select>
 </div>
 <div id= "row-2">
   Aimed major: <input id="majorInput" type="text" name="lname"><br>
 </div>
-  <input class= "btn-success" type="submit"  value="Submit">
-</form>
+  <input onclick="redirect()" class= "btn-success" type="submit" value="Submit">
+</div>
 
 
  
